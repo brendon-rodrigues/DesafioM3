@@ -1,6 +1,5 @@
 import React from "react"
 import styled from "styled-components"
-import Background from "../assets/desktop/backgroundheader.png"
 import navBar from "./navBar"
 const Header = styled.header`
     width: 98%;
