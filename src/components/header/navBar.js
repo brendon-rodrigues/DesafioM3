@@ -6,10 +6,10 @@ const Nav = styled.nav`
     align-items: center;
     h2{
         font-size: 1.7em;
-        margin: 10px;
+        margin-left: 30px;
     }
-    `;
-const UlStyle = styled.ul`
+`;
+export const UlStyle = styled.ul`
     display: flex;
     align-items: center;
     padding: 10px;
@@ -17,12 +17,25 @@ const UlStyle = styled.ul`
         margin: 10px;
     }
 `;
-const SubscribeButton = styled.button`
-    width: 10vw;
-    height: 6vh;
-    border: 2px solid black;
+export const SubscribeButton = styled.button`
+    width: 13vw;
+    height: 9vh;
+    font-size: 16px;
     background: none;
-`
+    border: none;
+    &&:hover{
+        border: 2px solid black;
+    }
+`;
+export const Menu = ()=>{
+    return(
+        <UlStyle>
+            <li>ABOUT</li>
+            <li>RECIPES</li>
+            <li><SubscribeButton>SUBSCRIBE</SubscribeButton></li>
+        </UlStyle>
+    );
+};
 export default function navBar(){
     return(
         <Nav>
@@ -30,12 +43,8 @@ export default function navBar(){
                 <h2>RC</h2>
             </div>
             <div>
-                <UlStyle>
-                    <li>ABOUT</li>
-                    <li>RECIPES</li>
-                    <li><SubscribeButton>SUBSCRIBE</SubscribeButton></li>
-                </UlStyle>
+                {Menu()}
             </div>
         </Nav>
-    )
+    );
 }

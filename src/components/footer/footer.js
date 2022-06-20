@@ -1,0 +1,41 @@
+import React from "react"
+import styled from "styled-components"
+import { Menu, UlStyle } from "../header/navBar"
+import Facebook from "../assets/desktop/facebook.png"
+import Twitter from "../assets/desktop/twitter.png"
+import Instagram from "../assets/desktop/instagram.png"
+import Pinterest from "../assets/desktop/pinterest.png"
+const SocialMedia = styled.div`
+    width: 30%;
+    img{
+        width: 2.5vw;
+        margin: 5px;   
+    }
+`;
+const Footer = styled.footer`
+    display: flex;
+    display: 100%;
+    height: 30vh;
+    justify-content: space-around;
+    align-items: center;
+    p{
+        width: 100%;
+        height: 4vh;
+        background-color: #446061;
+    }
+`;
+export default function FooterComponent (){
+    return(
+        <Footer>
+            <SocialMedia>
+                <img src={Facebook} alt="" />
+                <img src={Twitter} alt="" />
+                <img src={Instagram} alt="" />
+                <img src={Pinterest} alt="" />
+            </SocialMedia>
+            <div>
+                {Menu()}
+            </div>
+        </Footer>
+    )
+}

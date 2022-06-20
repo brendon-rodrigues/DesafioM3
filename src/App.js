@@ -2,6 +2,7 @@ import React, {Component} from "react";
 import HeaderComponent from "./components/header/header";
 import {createGlobalStyle } from "styled-components";
 import BodyComponent from "./components/body/body";
+import FooterComponent from "./components/footer/footer";
 const GlobalStyle = createGlobalStyle`
     *{
         margin: 0;
@@ -17,6 +18,7 @@ export default class App extends Component{
                 <GlobalStyle />
                 {HeaderComponent()}
                 {BodyComponent()}
+                {FooterComponent()}
             </>
         );
     };
