@@ -11,6 +11,10 @@ const GlobalStyle = createGlobalStyle`
         font-family: 'Montserrat', sans-serif;
         list-style: none;
     }
+    a, button{
+        cursor: pointer;
+    }
+    
 `;
 export default class App extends Component{
     render(){

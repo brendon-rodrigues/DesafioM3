@@ -10,14 +10,14 @@ const Header = styled.header`
     background-image: url(${Background});
     background-size: cover  ;
     background-position: center;
-`
+`;
 const Title = styled.h1`
     text-align: center;
     font-size: 6em;
     color: #373737;
     letter-spacing: 15.75px;
     margin-top: 22%;
-` 
+`; 
 export default function HeaderComponent (){
     return(
         <Header>
