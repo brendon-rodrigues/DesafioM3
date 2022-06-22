@@ -13,8 +13,13 @@ export const UlStyle = styled.ul`
     display: flex;
     align-items: center;
     padding: 10px;
+
     li{
         margin: 10px;
+    }
+    a{
+        text-decoration: none;
+        color: #000;
     }
 `;
 export const SubscribeButton = styled.button`
@@ -30,8 +35,8 @@ export const SubscribeButton = styled.button`
 export const Menu = ()=>{
     return(
         <UlStyle>
-            <li>ABOUT</li>
-            <li>RECIPES</li>
+            <li><a href="">ABOUT</a></li>
+            <li><a href="">RECIPES</a></li>
             <li><SubscribeButton>SUBSCRIBE</SubscribeButton></li>
         </UlStyle>
     );

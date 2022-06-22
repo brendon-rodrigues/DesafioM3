@@ -28,10 +28,10 @@ export default function FooterComponent (){
     return(
         <Footer>
             <SocialMedia>
-                <img src={Facebook} alt="" />
-                <img src={Twitter} alt="" />
-                <img src={Instagram} alt="" />
-                <img src={Pinterest} alt="" />
+               <a href=""> <img src={Facebook} alt="logo do facebook" /></a>
+               <a href=""> <img src={Twitter} alt="logo do twitter" /></a>
+               <a href=""> <img src={Instagram} alt="logo do instagram" /></a>
+               <a href=""> <img src={Pinterest} alt="logo do pinterest" /></a>
             </SocialMedia>
             <div>
                 {Menu()}
