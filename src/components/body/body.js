@@ -5,15 +5,15 @@ import SubscribeComponent from "./subscribe";
 import Imagembolo from "../assets/desktop/cake-horizontal.png"
 import Pizza from "../assets/desktop/foodiesfeed.com_neapolitan-pizza-margherita.png"
 import Smoothie from "../assets/desktop/foodiesfeed.com_peanut-butter-and-banana-smoothie.png"
-
 export default function BodyComponent (){
+    
     return(
         <body>
           
            
-            
+        
         <section>
-            <div className="TitleBox">
+        <div className="TitleBox">
                 <h1>LATEST RECIPES</h1>
             </div>
             <div className="container-receitas">
@@ -39,6 +39,7 @@ export default function BodyComponent (){
                     </div>
                 </div>
             </div>
+            
         </section>
         {SubscribeComponent()}
         </body>
