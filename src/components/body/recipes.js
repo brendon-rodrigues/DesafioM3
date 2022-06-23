@@ -3,7 +3,6 @@ import styled from "styled-components"
 import Imagembolo from "../assets/desktop/cake-horizontal.png"
 import Pizza from "../assets/desktop/foodiesfeed.com_neapolitan-pizza-margherita.png"
 import Smoothie from "../assets/desktop/foodiesfeed.com_peanut-butter-and-banana-smoothie.png"
-
 const H3=styled.h3`
 font-style: normal normal normal 32px/32px Hurme Geometric Sans 1;
 font-size: 1.1em;
@@ -25,6 +24,7 @@ display: inline-flexbox;
 display: flex;
 align-items: center;
 height: 100vh;
+background-color: #F2F4F1;
 `
 const TextBox = styled.div`
     height: 50%;
@@ -48,7 +48,7 @@ export default class Recipes extends React.Component{
 
     render(){
         return(
-            <Div> 
+            <Div>
                 {this.state.recipeslist.map(item => (
                     <Section>
                         <Img src={item.img}/>
