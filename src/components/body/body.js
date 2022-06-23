@@ -1,10 +1,11 @@
 import React from "react";
-import styled from "styled-components";
-import "./body.css";
-import SubscribeComponent from "./subscribe";
 import Imagembolo from "../assets/desktop/cake-horizontal.png"
 import Pizza from "../assets/desktop/foodiesfeed.com_neapolitan-pizza-margherita.png"
 import Smoothie from "../assets/desktop/foodiesfeed.com_peanut-butter-and-banana-smoothie.png"
+import styled from "styled-components";
+import "./body.css";
+import SubscribeComponent from "./subscribe";
+
 export default function BodyComponent (){
     
     return(

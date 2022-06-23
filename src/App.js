@@ -3,7 +3,7 @@ import HeaderComponent from "./components/header/header";
 import {createGlobalStyle } from "styled-components";
 import BodyComponent from "./components/body/body";
 import FooterComponent from "./components/footer/footer";
-import Recipes from "./components/body/recipes";
+import RecipesComponent from "./components/body/recipes";
 const GlobalStyle = createGlobalStyle`
     *{
         margin: 0;
@@ -23,8 +23,7 @@ export default class App extends Component{
             <>
                 <GlobalStyle />
                 {HeaderComponent()}
-                {BodyComponent()}
-                <Recipes />
+                {BodyComponent()}   
                 {FooterComponent()}
             </>
         );
