@@ -13,6 +13,7 @@ const SocialMedia = styled.div`
     }
 `;
 const Footer = styled.footer`
+margin-top:10%;
     display: flex;
     display: 100%;
     height: 30vh;
