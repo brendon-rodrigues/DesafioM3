@@ -37,5 +37,5 @@ export default function FooterComponent (){
                 {Menu()}
             </div>
         </Footer>
-    )
+    );
 }

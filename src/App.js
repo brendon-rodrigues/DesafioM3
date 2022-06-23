@@ -1,9 +1,8 @@
 import React, {Component} from "react";
 import HeaderComponent from "./components/header/header";
-import {createGlobalStyle } from "styled-components";
 import BodyComponent from "./components/body/body";
 import FooterComponent from "./components/footer/footer";
-import RecipesComponent from "./components/body/recipes";
+import {createGlobalStyle } from "styled-components";
 const GlobalStyle = createGlobalStyle`
     *{
         margin: 0;
@@ -11,11 +10,11 @@ const GlobalStyle = createGlobalStyle`
         box-sizing: border-box;
         font-family: 'Montserrat', sans-serif;
         list-style: none;
+        color: #373737;
     }
     a, button{
         cursor: pointer;
     }
-    
 `;
 export default class App extends Component{
     render(){

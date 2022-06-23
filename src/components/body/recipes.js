@@ -7,7 +7,7 @@ const H3=styled.h3`
 font-style: normal normal normal 32px/32px Hurme Geometric Sans 1;
 font-size: 1.1em;
 color: #373737
-`
+`;
 const Img = styled.img`
 width: 25vw;
 `
@@ -18,34 +18,28 @@ height: 80vh;
 flex-direction: column;
 box-shadow: 6px 7px 6px #00000029;
   background: #fff;
-`
+`;
 const Div=styled.div`
 display: inline-flexbox;
 display: flex;
 align-items: center;
 height: 100vh;
 background-color: #F2F4F1;
-`
+`;
 const TextBox = styled.div`
     height: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
-`
-
-
+`;
 export default class Recipes extends React.Component{
-    
-
     state={
         recipeslist: [
             {img: Imagembolo, title: "RED VELVET CAKE"},
             {img: Pizza, title:"MARGHERITA PIZZA"},
             {img: Smoothie, title: "PENAUT SMOOTHIE"}
         ]
-    }
-
-
+    };
     render(){
         return(
             <Div>
@@ -59,6 +53,6 @@ export default class Recipes extends React.Component{
                     </Section> 
                 ))}    
             </Div>
-        )
-    }
+        );
+    };
 }

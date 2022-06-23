@@ -2,7 +2,6 @@ import React from "react"
 import styled from "styled-components"
 import navBar from "./navBar"
 import Background from "../assets/desktop/backgroundheader.png"
-
 const Header = styled.header`
     width: 98%;
     height: 133vh;
@@ -25,5 +24,5 @@ export default function HeaderComponent (){
             {navBar()}
             <Title>RECIPES</Title>
         </Header>
-    )
+    );
 }
