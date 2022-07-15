@@ -1,6 +1,6 @@
 import React from "react"
 import styled from "styled-components"
-import { Menu, UlStyle } from "../header/navBar"
+import { Menu } from "../header/navBar"
 import Facebook from "../assets/desktop/facebook.png"
 import Twitter from "../assets/desktop/twitter.png"
 import Instagram from "../assets/desktop/instagram.png"
